@@ -28,7 +28,7 @@ ERC-20 Approve일 때, 승인할 토큰의 양(Amount)과 토큰 사용자(Spend
 ```solidity
 @id("unlimited-approval-warn")
 @severity("warn")
-@reason("무제한(U256::MAX) ERC20 승인을 잘 알려지지 않은 컨트랙트에 부여하는 중 — spender 가 이 토큰 잔액 전부를 언제든 옮길 수 있습니다. 신뢰하는 곳인지 확인하세요")
+@reason("이 트랜잭션에 서명하면 상대방이 내 토큰을 무제한 사용할 수 있습니다. 신뢰 가능한 상대인지 확인하세요.")
 forbid(principal, action == Token::Action::"Erc20Approve", resource)
 when {
   context.amount == "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"

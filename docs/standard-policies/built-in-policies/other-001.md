@@ -6,31 +6,42 @@ description: Unsupported Protocol Signature Request (WARN)
 
 ### Policy Definition (정책 정의)
 
-> Swap할 때 토큰을 수령할 주소가 **제3자의 것**으로 되어 있는 경우, 사용자가 수령할 주소를 검토할 수 있도록 **경고**합니다.
+> PASU에서 지원하지 않는 행위 또는 프로토콜의 요청에 서명하는 경우 경고를 표시합니다.
 
-Swap을 할 때&#x20;
+PASU 시스템은 지속적인 업데이트가 예정되어 있지만, 현실적인 문제로 인하여 TVL이 작거나 출시된 지 얼마 되지 않은 프로토콜까지는 모두 곧바로 지원하지 못할 수 있습니다. 이 경우, 안전한 거래를 위해 사용자가 직접 거래 대상을 검토하여야 하므로 이 서명은 PASU의 보호 범위 외에 있음을 명시하는 경고를 표시합니다.
 
 #### Scope (적용 범위)
 
-AMM 기반의 DEX에서 Swap할 때 적용됩니다.
+PASU 지원 범위 외
 
 #### Audience (대상 사용자)
 
-#### Used Data (판정에 사용될 데이터)
-
-#### Disclaimer (주의 사항)
-
-라우터를 사용하는 DEX를 사용하는 경우,&#x20;
+PASU 사용자
 
 #### Policy in Code
 
 {% code title="policy.cedar" %}
 ```solidity
+@id("unknown-blind-sign-warn")
+@severity("warn")
+@reason("이 트랜잭션은 PASU의 해석 범위 밖에 있습니다. 서명 전 안전한 프로토콜인지 검토하세요.")
+forbid(principal, action == Core::Action::"Unknown", resource);
 ```
 {% endcode %}
 
 {% code title="manifest.json" %}
 ```json
+{
+  "id": "unknown-blind-sign-warn",
+  "schema_version": 2,
+  "trigger": {
+    "where": {
+      "action.domain": {
+        "eq": "unknown"
+      }
+    }
+  }
+}
 ```
 {% endcode %}
 
