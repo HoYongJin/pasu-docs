@@ -19,14 +19,14 @@ Swap을 처음 할 때 발생할 수 있는 주요한 사고들을 서명 전에
 
 ### 정책 목록
 
-* swap-recipient-not-self-warn
-* swap-min-out-zero-warn
-* swap-high-slippage-warn
-* swap-output-token-reputation-warn
+* Swap으로 받을 자산이 제3자에게 갈 시 경고
+* 받을 토큰의 최소 수량이 0으로 설정된 Swap 요청 시 경고
+* 슬리피지 허용치가 기준(1%)을 초과하는 Swap 요청 시 경고
+* 검증되지 않았거나 악성으로 분류된 토큰 매수 시 경고
 
 ***
 
-**Package Name**\
-Wallet Guardians | v.1.0.0 | 26/06/10\
+**\[DEX] Safe Swap**\
+Wallet Guardians | v.1.0.0 | 26/06/11\
 \
 &#xNAN;_&#x53;upported Chain: Ethereum_

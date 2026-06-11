@@ -19,11 +19,11 @@ Web3에 갓 입문한 사용자가 첫 승인, 첫 송금, 첫 서명 시에 겪
 
 ### 정책 목록
 
-* unlimited-erc20-approve-warn
-* transfer-to-burn-address-warn
-* transfer-to-token-contract-warn
-* permit2-sign-unlimited-warn
-* approve-spender-reputation-deny
+* 선별되지 않은 컨트랙트의 토큰 최대치 승인 요청 시 경고
+* 자산이 소각되는 주소로 토큰을 전송할 시 경고
+* 해당 토큰의 컨트랙트 주소로 토큰을 전송할 시 경고
+* 토큰 최대치의 Permit2 허용량 서명 요청 시 경고
+* 악성으로 알려진 주소에 토큰 사용 승인 요청 시 차단
 
 ***
 
