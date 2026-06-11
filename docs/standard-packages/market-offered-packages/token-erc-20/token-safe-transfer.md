@@ -1,2 +1,33 @@
+---
+description: 토큰을 안전하게 송금하고 싶은 분들을 위한 패키지
+---
+
 # \[Token] Safe Transfer
 
+### 이 패키지로 막을 수 있는 것
+
+토큰을 자주 송금(Transfer)하는 사용자가 거래소 입출금, 지갑 간 이동을 할 때 엉뚱한 주소로 토큰을 보내지 않도록 이상 징후를 발견할 시 경고합니다.
+
+* 거래 이력이 없는, 처음 보는 주소로 송금할 때 경고합니다.
+* 소각 주소로 토큰을 송금할 때 경고합니다.
+* 보유한 토큰의 절반 이상을 송금할 때 경고합니다.
+* 제재 대상 주소로 송금할 때 경고합니다.
+
+### 상세 설명
+
+토큰을 송금할 때 '받는 사람'이 '얼마나' 받게 될지 검사합니다. 처음 보는 주소이거나, 소각 주소, 제재 대상 주소인 경우와 송금하는 액수가 과다할 때에 경고를 표시합니다.
+
+### 정책 목록
+
+* transfer-new-recipient-cooldown-warn
+* transfer-address-poisoning-warn
+* transfer-to-burn-address-warn
+* transfer-fraction-of-holdings-warn
+* transfer-recipient-sanctioned-deny
+
+***
+
+**\[Token] Safe Transfer**\
+Wallet Guardians | v.1.0.0 | 26/06/10\
+\
+&#xNAN;_&#x53;upported Chain: Ethereum_

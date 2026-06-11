@@ -1,2 +1,0 @@
-# \[Token] Safe Approve
-
