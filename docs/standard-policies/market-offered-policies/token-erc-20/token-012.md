@@ -28,7 +28,7 @@ ERC-20 전송. 받는 주소가 전송하려는 토큰의 컨트랙트 주소와
 ```solidity
 @id("transfer-to-token-contract-warn")
 @severity("warn")
-@reason("Recipient is the token's own contract address — these tokens will likely be lost; confirm before sending")
+@reason("받는 주소가 전송하려는 토큰 자체의 컨트랙트 주소입니다. 보낸 토큰이 영영 묶일 수 있으니 확인하세요.")
 forbid(principal, action == Token::Action::"Erc20Transfer", resource)
 when {
   context.token.key has address

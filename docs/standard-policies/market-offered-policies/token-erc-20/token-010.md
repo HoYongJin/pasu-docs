@@ -8,7 +8,7 @@ description: Transfer of Over Half Your Token Holdings (WARN)
 
 > 한 번의 전송으로 그 토큰 보유량의 절반을 초과해 옮기는 경우 경고합니다.
 
-가진 토큰의 절반이 넘는 양을 한 번에 옮기는 건 의도한 거래일 수도 있지만, 금액을 잘못 입력했거나 지갑이 털리는 중일 때 흔히 나타나는 모습이기도 합니다. 전송량이 보유량에서 차지하는 비중이 절반을 넘으면, 정말 이만큼 보낼 것인지 서명 전에 확인하도록 경고합니다.
+가진 토큰의 절반이 넘는 양을 한 번에 옮기는 건 의도한 거래일 수도 있지만, 금액을 잘못 입력했거나 지갑이 털리는 중일 때 흔히 보이는 신호이기도 합니다. 전송량이 보유량에서 차지하는 비중이 절반을 넘으면, 정말 이만큼 보낼 것인지 서명 전에 확인하도록 경고합니다.
 
 #### Scope (적용 범위)
 
@@ -28,7 +28,7 @@ ERC-20 전송. 전송량이 해당 토큰 보유량의 50%(5,000bp)를 초과하
 ```solidity
 @id("transfer-fraction-of-holdings-warn")
 @severity("warn")
-@reason("This transfer moves over half your balance of this token — confirm before sending")
+@reason("이 전송은 해당 토큰 보유량의 절반이 넘는 양을 옮깁니다. 보내기 전에 확인하세요.")
 forbid(principal, action == Token::Action::"Erc20Transfer", resource)
 when {
   context has custom

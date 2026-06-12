@@ -8,7 +8,7 @@ description: Transfer to a Brand-New Recipient (WARN)
 
 > 거래한 적이 한 번도 없고, 최근에야 처음 나타난 주소로 전송하는 경우 경고합니다.
 
-한 번도 거래한 적 없고 바로 얼마 전에야 체인에 처음 등장한 주소는, 오타로 잘못 친 주소이거나 주소 오염·새로 만든 탈취용 주소일 가능성이 있습니다. 받는 곳이 이렇게 '처음 보는' 주소라면, 잠깐의 유예를 두고 주소를 한 번 더 대조하도록 경고합니다.
+한 번도 거래한 적 없고 바로 얼마 전에야 체인에 처음 등장한 주소는, 오타로 잘못 친 주소이거나, 주소 오염에 쓰인 가짜 주소, 또는 새로 만든 탈취용 주소일 수 있습니다. 받는 곳이 이렇게 '처음 보는' 주소라면, 잠깐의 유예를 두고 주소를 한 번 더 대조하도록 경고합니다.
 
 #### Scope (적용 범위)
 
@@ -28,7 +28,7 @@ ERC-20 전송. 받는 주소의 거래 이력이 0이면서, 최초로 관측된
 ```solidity
 @id("transfer-new-recipient-cooldown-warn")
 @severity("warn")
-@reason("Recipient is brand-new (no history, first seen recently) — wait out the cooldown and re-verify the address")
+@reason("받는 주소가 거래 이력이 없는 새 주소입니다. 잠시 멈추고 주소를 다시 확인하세요.")
 forbid(principal, action == Token::Action::"Erc20Transfer", resource)
 when {
   context has custom
