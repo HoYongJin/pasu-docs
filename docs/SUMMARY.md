@@ -37,7 +37,7 @@
     * [NFT](standard-packages/market-offered-packages/nft/README.md)
       * [\[NFT\] NFT 컬렉션 권한 위임 주소 확인](standard-packages/market-offered-packages/nft/nft-nft.md)
       * [\[NFT\] Safe Listing & Sale](standard-packages/market-offered-packages/nft/nft-safe-listing-and-sale.md)
-      * [\[NFT\] Safe Purchase & Transfer](standard-packages/market-offered-packages/nft/nft-safe-purchase-and-transfer.md)
+      * [\[NFT\] NFT 구매 및 전송 관리](standard-packages/market-offered-packages/nft/nft-nft-1.md)
     * [Others](standard-packages/market-offered-packages/others/README.md)
       * [\[Launchpad\] Launchpad Participation Shield](standard-packages/market-offered-packages/others/launchpad-launchpad-participation-shield.md)
       * [\[Bridge\] Destination & Execution Safety](standard-packages/market-offered-packages/others/bridge-destination-and-execution-safety.md)
