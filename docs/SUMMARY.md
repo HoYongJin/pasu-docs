@@ -16,7 +16,7 @@
       * [\[Lending\] Safe Supply & Withdraw](standard-packages/market-offered-packages/lending/lending-safe-supply-and-withdraw.md)
       * [\[Lending\] Position Authorization Guard](standard-packages/market-offered-packages/lending/lending-position-authorization-guard.md)
     * [Airdrop](standard-packages/market-offered-packages/airdrop/README.md)
-      * [\[Airdrop\] Claim Phishing Shield](standard-packages/market-offered-packages/airdrop/airdrop-claim-phishing-shield.md)
+      * [\[Airdrop\] 클레임 피싱 차단 - 좀 더 봐야할듯](standard-packages/market-offered-packages/airdrop/airdrop.md)
       * [\[Airdrop\] High Value Claim Checker](standard-packages/market-offered-packages/airdrop/airdrop-high-value-claim-checker.md)
     * [Perp](standard-packages/market-offered-packages/perp/README.md)
       * [\[Perp\] 고배율 레버리지 차단](standard-packages/market-offered-packages/perp/perp.md)
