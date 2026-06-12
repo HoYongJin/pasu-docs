@@ -19,7 +19,7 @@
       * [\[Airdrop\] Claim Phishing Shield](standard-packages/market-offered-packages/airdrop/airdrop-claim-phishing-shield.md)
       * [\[Airdrop\] High Value Claim Checker](standard-packages/market-offered-packages/airdrop/airdrop-high-value-claim-checker.md)
     * [Perp](standard-packages/market-offered-packages/perp/README.md)
-      * [\[Perp\] Leverage Guard](standard-packages/market-offered-packages/perp/perp-leverage-guard.md)
+      * [\[Perp\] 고배율 레버리지 차단](standard-packages/market-offered-packages/perp/perp.md)
       * [\[Perp\] Liquidation & Margin Defense](standard-packages/market-offered-packages/perp/perp-liquidation-and-margin-defense.md)
       * [\[Perp\] Sizing & Market Discipline](standard-packages/market-offered-packages/perp/perp-sizing-and-market-discipline.md)
     * [Staking](standard-packages/market-offered-packages/staking/README.md)
