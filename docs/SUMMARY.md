@@ -35,7 +35,7 @@
       * [\[Liquid Staking\] Safe Withdrawal Request & Claim](standard-packages/market-offered-packages/liquid-staking/liquid-staking-safe-withdrawal-request-and-claim.md)
       * [\[Liquid Staking\] stETH Share Transfer Safety](standard-packages/market-offered-packages/liquid-staking/liquid-staking-steth-share-transfer-safety.md)
     * [NFT](standard-packages/market-offered-packages/nft/README.md)
-      * [\[NFT\] Safe Collection Approval](standard-packages/market-offered-packages/nft/nft-safe-collection-approval.md)
+      * [\[NFT\] NFT 컬렉션 권한 위임 주소 확인](standard-packages/market-offered-packages/nft/nft-nft.md)
       * [\[NFT\] Safe Listing & Sale](standard-packages/market-offered-packages/nft/nft-safe-listing-and-sale.md)
       * [\[NFT\] Safe Purchase & Transfer](standard-packages/market-offered-packages/nft/nft-safe-purchase-and-transfer.md)
     * [Others](standard-packages/market-offered-packages/others/README.md)
